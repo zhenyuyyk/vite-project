@@ -3,7 +3,8 @@
 </script>
 
 <template>
-<p>注册</p>
+  <p>注册页面</p>
+  <p>没有头尾</p>
 </template>
 
 <style scoped>

@@ -1,12 +1,19 @@
 // 导入router所需的方法
 import {createRouter, createWebHistory} from 'vue-router'
 // 导入路由页面的配置
-import home from './home.js';
-import login from "./login.js"
+import home from '@/router//home.js';
+import login from "@/router//login.js"
+import product from "@/router/product.js";
 
 let routes = [
     ...home,
-    ...login
+    ...login,
+    ...product,
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: () => import("@/view/others/notFound.vue")
+    }
 ]
 
 // 路由参数配置

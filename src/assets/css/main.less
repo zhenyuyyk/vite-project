@@ -1,26 +1,36 @@
-#app{
+#app {
   display: flex;
   flex-direction: column;
 }
-.app_main_content{
+
+.app_main_content {
   display: flex;
   flex: 1;
-  height: auto;
+  height: calc(100% - 35px);
 }
-.com_layout_header{
+
+.com_layout_header {
   display: flex;
   align-items: center;
   padding: 10px;
   height: 35px;
   background-color: #747bff;
 }
-.com_layout_sidebar{
+
+.com_layout_sidebar {
   height: 100%;
   width: 200px;
   background-color: blue;
   padding-left: 20px;
-  li{
+
+  li {
     height: 40px;
     cursor: pointer;
   }
+}
+
+.com_layout_content {
+  flex: auto;
+  padding: 15px;
+  overflow-y: auto;
 }

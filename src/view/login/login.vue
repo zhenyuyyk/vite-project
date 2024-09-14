@@ -3,9 +3,10 @@
 </script>
 
 <template>
-<p>登录</p>
+  <p>登录页</p>
+  <p>没有头尾</p>
 </template>
 
-<style scoped>
+<style lang="less" scoped>
 
 </style>
