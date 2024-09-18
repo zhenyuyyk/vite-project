@@ -1,4 +1,4 @@
-<script lang="jsx" setup>
+<script setup>
 import {productTypeList} from "@/utils/enum/product.js"
 import {Form, message} from 'ant-design-vue';
 import {useRouter} from 'vue-router';
