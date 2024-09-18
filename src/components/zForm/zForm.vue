@@ -67,6 +67,7 @@ for (let i of props.columns) {
   if (i.attrs && i.attrs.service) {
     (async () => {
       let options = await i.attrs.service();
+      console.log(options)
       i.attrs.options = options;
     })();
   }

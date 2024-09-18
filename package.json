@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite  --mode development",
+    "build:test": "vite build --mode test",
+    "build": "vite build --mode production",
+    "build:prod": "vite build --mode production",
+    "preview": "vite preview --mode production"
   },
   "dependencies": {
     "@vueuse/core": "^11.0.3",
@@ -16,15 +18,20 @@
     "less-loader": "^12.2.0",
     "pinia": "^2.2.2",
     "pinia-plugin-persist": "^1.0.0",
+    "rollup-plugin-visualizer": "^5.12.0",
     "vue": "^3.4.37",
     "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
     "@vitejs/plugin-vue": "^5.1.2",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vue/babel-plugin-jsx": "^1.2.2",
     "consola": "^3.2.3",
     "unplugin-vue-components": "^0.27.4",
     "vite": "^5.4.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-style-import": "^2.0.0"
   }
 }

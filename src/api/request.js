@@ -1,5 +1,7 @@
 import axios from "axios";
 import {message} from "ant-design-vue";
+
+console.log("环境变量",import.meta.env)
 // 创建 axios 实例
 const service = axios.create({
     baseURL: "/api",
@@ -32,7 +34,7 @@ service.interceptors.response.use((response) => {
         message.warning(response.data.msg || "服务器维护中")
         return response;
     } else {
-        return response.data;
+        return response.data.data;
     }
 }, err);
 
