@@ -18,14 +18,14 @@ import {
 import viteCompression from 'vite-plugin-compression'
 // 引入图片压缩
 import viteImagemin from 'vite-plugin-imagemin'
-import { visualizer } from 'rollup-plugin-visualizer'; //打包体积分析
+import {visualizer} from 'rollup-plugin-visualizer'; //打包体积分析
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
         vue(),
         vueJsx(),
-        visualizer({ open: true}),
+        visualizer({open: true}),
         Components({
             dirs: ['src/components'], // 目标文件夹
             extensions: ['vue', 'jsx'], // 文件类型

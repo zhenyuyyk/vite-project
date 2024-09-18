@@ -1,9 +1,12 @@
 import {ref} from "vue";
 import {Form} from 'ant-design-vue';
-
+import { serviceOptions } from "@/api/product/list";
 export const useListForm = (list, mapObj) => {
-    const useForm = Form.useForm;
-    const {validate, validateInfos, resetFields} = useForm(formState, rules);
+    const optionsRef = ref([
+        { label: "AppleLABEL", value: "Apple" },
+        { label: "PearLABE", value: "Pear" },
+        { label: "OrangeLABE", value: "Orange", disabled: true },
+    ]);
     const formBind = ref({
         labelCol: {
             style: {
@@ -231,5 +234,7 @@ export const useListForm = (list, mapObj) => {
             attrs: {},
         },
     ]);
+    const useForm = Form.useForm;
+    const {validate, validateInfos, resetFields} = useForm(formState, rules);
     return {formBind, formState, rules, columns, validate, validateInfos, resetFields}
 }
