@@ -46,3 +46,9 @@ import 'ant-design-vue/lib/button/style/index.js';
 
 
 地址：https://github.com/vbenjs/vite-plugin-style-import
+
+## 打包优化
+
+1. vite-plugin-compression：gzip静态资源压缩
+2. vite-plugin-imagemin：图片压缩
+3. rollup-plugin-visualizer：打包体积分析

@@ -88,6 +88,8 @@ export default defineConfig({
         })
     ],
     resolve: {
+        // 配置省略后缀
+        extensions: ['.js', '.vue', '.jsx', '.ts', '.tsx', '.json'],
         alias: {
             '@': path.resolve(__dirname, './src'), // 设置@指向项目src目录
         },
