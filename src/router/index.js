@@ -18,7 +18,7 @@ let routes = [
 
 // 路由参数配置
 const router = createRouter({
-    // 使用hash(createWebHashHistory)模式，(createWebHistory是HTML5历史模式，支持SEO)
+    // hash(createWebHashHistory)模式，(createWebHistory是HTML5历史模式，支持SEO)
     history: createWebHistory(),
     routes,
     scrollBehavior(to, from, savedPosition) {
